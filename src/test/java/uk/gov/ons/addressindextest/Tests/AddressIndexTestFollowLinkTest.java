@@ -1,4 +1,4 @@
-package com.yourcompany.Tests;
+package uk.gov.ons.addressindextest.Tests;
 
 import com.yourcompany.Pages.AnotherPage;
 import com.yourcompany.Pages.GuineaPigPage;
@@ -13,11 +13,7 @@ import java.rmi.UnexpectedException;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by mehmetgerceker on 12/7/15.
- */
-
-public class SampleSauceFollowLinkTest extends SampleSauceTestBase {
+public class AddressIndexTestFollowLinkTest extends AddressIndexTestBase {
 
     /**
      * Runs a simple test verifying the checked checkbox state
@@ -33,12 +29,12 @@ public class SampleSauceFollowLinkTest extends SampleSauceTestBase {
         WebDriver driver = this.getWebDriver();
 
         // initialize page object
-        GuineaPigPage gpage = PageFactory.initElements(driver, GuineaPigPage.class);
+        AddressIndexPage gpage = PageFactory.initElements(driver, AddressIndexPage.class);
 
         gpage.visitPage();
         gpage.followLink();
 
-        AnotherPage apage = PageFactory.initElements(driver, AnotherPage.class);
+        AddressIndexSearch apage = PageFactory.initElements(driver, AddressIndexSearch.class);
 
         assertEquals(apage.title, apage.getTitle(driver));
 

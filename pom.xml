@@ -7,8 +7,8 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>sauce_quickstart</name>
-    <description>A sample Maven project that demonstrates how to integrate Sauce OnDemand with WebDriver tests
-        that run using TestNG
+    <description>A Maven project that test the Address Index API integrated with Sauce OnDemand using WebDriver tests
+        that run under TestNG
     </description>
 
     <dependencies>

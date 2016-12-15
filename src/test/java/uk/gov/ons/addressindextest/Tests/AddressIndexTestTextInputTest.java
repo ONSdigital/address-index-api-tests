@@ -1,7 +1,7 @@
-package com.yourcompany.Tests;
+package uk.gov.ons.addressindextest.Tests;
 
 
-import com.yourcompany.Pages.GuineaPigPage;
+import uk.gov.ons.addressindextest.Pages.AddressIndexPage;
 import org.openqa.selenium.InvalidElementStateException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -14,12 +14,7 @@ import java.util.UUID;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.junit.Assert.assertThat;
 
-
-/**
- * Created by mehmetgerceker on 12/7/15.
- */
-
-public class SampleSauceTextInputTest extends SampleSauceTestBase {
+public class AddressIndexTextInputTest extends SampleSauceTestBase {
 
     /**
      * Runs a simple test verifying if the email input is functional.
@@ -28,19 +23,19 @@ public class SampleSauceTextInputTest extends SampleSauceTestBase {
     @org.testng.annotations.Test(dataProvider = "hardCodedBrowsers")
     public void verifyEmailInputTest(String browser, String version, String os, Method method)
             throws MalformedURLException, InvalidElementStateException, UnexpectedException {
-        String commentInputText = UUID.randomUUID().toString();
+        String searchInputText = "7 Gate Reach Exeter EX2 6GA"
 
         this.createDriver(browser, version, os, method.getName());
         WebDriver driver = this.getWebDriver();
 
         // initialize page object
-        GuineaPigPage gpage = PageFactory.initElements(driver, GuineaPigPage.class);
+        AddressIndexSearch gpage = PageFactory.initElements(driver, AddressIndexSearch.class);
 
         gpage.visitPage();
 
-        gpage.submitComment(commentInputText);
+        gpage.submitSearchText(searchInputText);
 
-        assertThat(gpage.getSubmittedCommentText(), containsString(commentInputText));
+        assertThat(gpage.getSubmittedCommentText(), containsString(searchInputText));
 
 
     }

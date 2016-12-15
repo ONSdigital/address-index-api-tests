@@ -1,12 +1,9 @@
-package com.yourcompany.Pages;
+package uk.gov.ons.addressindextest.Pages;
 
 import org.openqa.selenium.InvalidElementStateException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-/**
- * Created by mehmetgerceker on 12/7/15.
- */
 public class PageBase {
 
     WebDriver driver;

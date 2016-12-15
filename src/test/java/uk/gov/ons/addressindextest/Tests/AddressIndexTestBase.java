@@ -1,4 +1,4 @@
-package com.yourcompany.Tests;
+package uk.gov.ons.addressindextest.Tests;
 
 // import Sauce TestNG helper libraries
 
@@ -22,13 +22,8 @@ import java.rmi.UnexpectedException;
 // import testng annotations
 // import java libraries
 
-/**
- * Simple TestNG test which demonstrates being instantiated via a DataProvider in order to supply multiple browser combinations.
- *
- * @author Neil Manvar
- */
 @Listeners({SauceOnDemandTestListener.class})
-public class SampleSauceTestBase implements SauceOnDemandSessionIdProvider, SauceOnDemandAuthenticationProvider  {
+public class AddressIndexTestBase implements SauceOnDemandSessionIdProvider, SauceOnDemandAuthenticationProvider  {
 
     public String seleniumURI = "@ondemand.saucelabs.com:443";
 
