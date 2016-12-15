@@ -29,7 +29,7 @@ public class GuineaPigPage extends PageBase {
     }
 
     public void visitPage() {
-        driver.get("https://saucelabs.com/test/guinea-pig");
+        driver.get("https://addressindexui.cfapps.io/addresses");
     }
 
     public void followLink() {
