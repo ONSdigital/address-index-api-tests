@@ -33,7 +33,7 @@ public class AddressIndexTestTextInputTest extends AddressIndexTestBase {
         WebDriver driver = this.getWebDriver();
 
         // initialize page object
-        AddressIndexPage gpage = PageFactory.initElements(driver, AddressIndexPage.class);
+        AddressIndexSearch gpage = PageFactory.initElements(driver, AddressIndexSearch.class);
         gpage.visitPage();
         gpage.submitSearchText(searchInputText);
         assertThat(gpage.getResultsText(), containsString(searchInputText));
