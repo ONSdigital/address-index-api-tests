@@ -38,6 +38,6 @@ public class AddressIndexTestTextInputTest extends AddressIndexTestBase {
         gpage.visitPage();
         gpage.submitSearchText(searchInputText);
         driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-        assertThat(gpage.getResultsText(), containsString(searchInputText));
+        assertThat(gpage.getResultsText(), containsString("10 addresses found"));
     }
 }
