@@ -27,7 +27,7 @@ public class AddressIndexSearch extends PageBase {
     @FindBy(tagName = "h3")
     private WebElement resultsSpan;
 
-    public void submitSearch(String text) {
+    public void submitSearchText(String text) {
         setTextAreaInputValue(this.searchTextAreaInput, text);
         clickButton(this.submitButton);
 
