@@ -30,14 +30,9 @@ public class AddressIndexTestFollowLinkTest extends AddressIndexTestBase {
 
         // initialize page object
         AddressIndexPage gpage = PageFactory.initElements(driver, AddressIndexPage.class);
-
         gpage.visitPage();
         gpage.followLink();
-
         AddressIndexSearch apage = PageFactory.initElements(driver, AddressIndexSearch.class);
-
         assertEquals(apage.title, apage.getTitle(driver));
-
     }
-
 }
