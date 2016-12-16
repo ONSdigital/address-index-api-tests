@@ -24,7 +24,7 @@ public class AddressIndexSearch extends PageBase {
     @FindBy(id = "address")
     private WebElement searchTextAreaInput;
 
-    @FindBy(tag_name = "h3")
+    @FindBy(tagName = "h3")
     private WebElement resultsSpan;
 
     public void submitSearch(String text) {
