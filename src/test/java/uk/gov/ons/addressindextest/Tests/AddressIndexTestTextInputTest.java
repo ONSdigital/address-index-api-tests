@@ -39,7 +39,7 @@ public class AddressIndexTestTextInputTest extends AddressIndexTestBase {
 
         gpage.submitSearchText(searchInputText);
 
-        assertThat(gpage.getSubmittedCommentText(), containsString(searchInputText));
+        assertThat(gpage.getResultsText(), containsString(searchInputText));
 
 
     }
