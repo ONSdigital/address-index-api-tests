@@ -14,7 +14,7 @@ import java.util.UUID;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.junit.Assert.assertThat;
 
-public class AddressIndexTextInputTest extends SampleSauceTestBase {
+public class AddressIndexTextInputTest extends AddressIndexTestBase {
 
     /**
      * Runs a simple test verifying if the email input is functional.
