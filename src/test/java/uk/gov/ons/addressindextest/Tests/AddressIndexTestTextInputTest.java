@@ -23,7 +23,7 @@ public class AddressIndexTextInputTest extends SampleSauceTestBase {
     @org.testng.annotations.Test(dataProvider = "hardCodedBrowsers")
     public void verifyEmailInputTest(String browser, String version, String os, Method method)
             throws MalformedURLException, InvalidElementStateException, UnexpectedException {
-        String searchInputText = "7 Gate Reach Exeter EX2 6GA"
+        String searchInputText = "7 Gate Reach Exeter EX2 6GA";
 
         this.createDriver(browser, version, os, method.getName());
         WebDriver driver = this.getWebDriver();
