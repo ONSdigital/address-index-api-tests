@@ -21,7 +21,7 @@ public class AddressIndexTestFollowLinkTest extends AddressIndexTestBase {
      * @throws InvalidElementStateException
      */
     @Test(dataProvider = "hardCodedBrowsers")
-    public void verifyUncheckedCheckBoxInputTest(String browser, String version, String os, Method method)
+    public void verifySearchLinkTest(String browser, String version, String os, Method method)
             throws MalformedURLException, InvalidElementStateException, UnexpectedException {
 
         //create webdriver session
