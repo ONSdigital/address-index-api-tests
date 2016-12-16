@@ -36,6 +36,7 @@ public class AddressIndexTestTextInputTest extends AddressIndexTestBase {
         AddressIndexSearch gpage = PageFactory.initElements(driver, AddressIndexSearch.class);
         gpage.visitPage();
         gpage.submitSearchText(searchInputText);
+        driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
         assertThat(gpage.getResultsText(), containsString(searchInputText));
     }
 }
