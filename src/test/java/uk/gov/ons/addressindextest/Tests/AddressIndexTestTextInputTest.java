@@ -37,7 +37,8 @@ public class AddressIndexTestTextInputTest extends AddressIndexTestBase {
         AddressIndexSearch gpage = PageFactory.initElements(driver, AddressIndexSearch.class);
         gpage.visitPage();
         gpage.submitSearchText(searchInputText);
-        driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+        WebDriverWait wait = new WebDriverWait(driver, 15);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("green"));
         assertThat(gpage.getResultsText(), containsString("10 addresses found"));
     }
 }
