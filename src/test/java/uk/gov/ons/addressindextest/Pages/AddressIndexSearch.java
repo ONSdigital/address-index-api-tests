@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 public class AddressIndexSearch extends PageBase {
 
-    public AnotherPage(WebDriver driver) {
+    public AddressIndexSearch(WebDriver driver) {
         this.driver = driver;
     }
 
