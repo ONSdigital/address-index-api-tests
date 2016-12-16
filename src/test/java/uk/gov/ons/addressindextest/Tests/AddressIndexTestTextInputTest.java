@@ -29,7 +29,7 @@ public class AddressIndexTestTextInputTest extends AddressIndexTestBase {
         WebDriver driver = this.getWebDriver();
 
         // initialize page object
-        AddressIndexSearch gpage = PageFactory.initElements(driver, AddressIndexSearch.class);
+        AddressIndexSearch gpage = PageFactory.initElements(driver, AddressIndexSearch);
 
         gpage.visitPage();
 
