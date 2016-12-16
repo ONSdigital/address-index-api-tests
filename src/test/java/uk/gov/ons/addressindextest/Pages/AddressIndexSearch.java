@@ -35,7 +35,7 @@ public class AddressIndexSearch extends PageBase {
         setTextAreaInputValue(this.searchTextAreaInput, text);
         clickButton(this.submitButton);
 
-        WebDriverWait wait = new WebDriverWait(this.driver, 15);
+        WebDriverWait wait = new WebDriverWait(this.driver, 60);
         wait.until(ExpectedConditions.textToBePresentInElement(resultsSpan, text));
     }
 
