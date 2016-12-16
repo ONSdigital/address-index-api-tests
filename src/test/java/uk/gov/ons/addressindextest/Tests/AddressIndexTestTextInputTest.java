@@ -2,6 +2,7 @@ package uk.gov.ons.addressindextest.Tests;
 
 import uk.gov.ons.addressindextest.Pages.AddressIndexSearch;
 import uk.gov.ons.addressindextest.Pages.AddressIndexPage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.InvalidElementStateException;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
