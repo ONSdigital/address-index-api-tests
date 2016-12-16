@@ -25,7 +25,7 @@ public class AddressIndexTestTextInputTest extends AddressIndexTestBase {
      * @throws InvalidElementStateException
      */
     @org.testng.annotations.Test(dataProvider = "hardCodedBrowsers")
-    public void verifyEmailInputTest(String browser, String version, String os, Method method)
+    public void verifySearchInputTest(String browser, String version, String os, Method method)
             throws MalformedURLException, InvalidElementStateException, UnexpectedException {
         String searchInputText = "7 Gate Reach Exeter EX2 6GA";
 
