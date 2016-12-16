@@ -11,6 +11,10 @@ public class AddressIndexSearch extends PageBase {
     public AddressIndexSearch(WebDriver driver) {
         this.driver = driver;
     }
+    
+    public void visitPage() {
+        driver.get("https://addressindexui.cfapps.io/addresses");
+    }
 
     public String title = "Address index demo - Find an address";
 
