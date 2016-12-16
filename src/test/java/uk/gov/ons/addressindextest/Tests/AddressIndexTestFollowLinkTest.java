@@ -1,7 +1,7 @@
 package uk.gov.ons.addressindextest.Tests;
 
-import com.yourcompany.Pages.AnotherPage;
-import com.yourcompany.Pages.GuineaPigPage;
+import uk.gov.ons.addressindextest.Pages.AddressIndexSearch;
+import uk.gov.ons.addressindextest.Pages.AddressIndexPage;
 import org.openqa.selenium.InvalidElementStateException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
