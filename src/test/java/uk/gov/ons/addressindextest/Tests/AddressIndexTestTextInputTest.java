@@ -3,16 +3,17 @@ package uk.gov.ons.addressindextest.Tests;
 import uk.gov.ons.addressindextest.Pages.AddressIndexSearch;
 import uk.gov.ons.addressindextest.Pages.AddressIndexPage;
 import org.openqa.selenium.InvalidElementStateException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.rmi.UnexpectedException;
+import java.util.concurrent.TimeUnit;
 import java.util.UUID;
 
 import static org.hamcrest.CoreMatchers.containsString;
