@@ -1,6 +1,5 @@
 package uk.gov.ons.addressindextest.Tests;
 
-
 import uk.gov.ons.addressindextest.Pages.AddressIndexPage;
 import org.openqa.selenium.InvalidElementStateException;
 import org.openqa.selenium.WebDriver;
@@ -29,7 +28,7 @@ public class AddressIndexTestTextInputTest extends AddressIndexTestBase {
         WebDriver driver = this.getWebDriver();
 
         // initialize page object
-        AddressIndexSearch gpage = PageFactory.initElements(driver, AddressIndexSearch);
+        AddressIndexSearch gpage = PageFactory.initElements(driver, AddressIndexSearch.class);
 
         gpage.visitPage();
 
