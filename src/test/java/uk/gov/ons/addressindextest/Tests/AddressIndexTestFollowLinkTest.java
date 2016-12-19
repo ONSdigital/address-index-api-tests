@@ -33,6 +33,6 @@ public class AddressIndexTestFollowLinkTest extends AddressIndexTestBase {
         gpage.visitPage();
         gpage.followLink();
         AddressIndexSearch apage = PageFactory.initElements(driver, AddressIndexSearch.class);
-        assertEquals(apage.title, apage.getTitle(driver));
+        assertEquals(gpage.title, apage.getTitle(driver));
     }
 }
