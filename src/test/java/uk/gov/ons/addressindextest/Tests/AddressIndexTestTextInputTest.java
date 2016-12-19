@@ -23,7 +23,7 @@ import static org.junit.Assert.assertThat;
 public class AddressIndexTestTextInputTest extends AddressIndexTestBase {
 
     /**
-     * Runs a simple test verifying if the email input is functional.
+     * Runs a simple test verifying the search input is functional.
      * @throws InvalidElementStateException
      */
     @org.testng.annotations.Test(dataProvider = "hardCodedBrowsers")
