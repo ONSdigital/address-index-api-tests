@@ -34,9 +34,6 @@ public class AddressIndexSearch extends PageBase {
     public void submitSearchText(String text) {
         setTextAreaInputValue(this.searchTextAreaInput, text);
         clickButton(this.submitButton);
-
-        WebDriverWait wait = new WebDriverWait(this.driver, 60);
-        wait.until(ExpectedConditions.textToBePresentInElement(resultsSpan, text));
     }
 
     public String getResultsText() {
