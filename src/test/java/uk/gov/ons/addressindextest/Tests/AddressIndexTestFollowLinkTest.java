@@ -16,7 +16,7 @@ import static org.junit.Assert.assertEquals;
 public class AddressIndexTestFollowLinkTest extends AddressIndexTestBase {
 
     /**
-     * Runs a simple test verifying the checked checkbox state
+     * Runs a simple test verifying link to the search page
      *
      * @throws InvalidElementStateException
      */
