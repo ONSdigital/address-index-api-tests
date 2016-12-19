@@ -38,8 +38,10 @@ public class AddressIndexTestTextInputTest extends AddressIndexTestBase {
         AddressIndexSearch gpage = PageFactory.initElements(driver, AddressIndexSearch.class);
         gpage.visitPage();
         gpage.submitSearchText(searchInputText);
-        WebDriverWait wait = new WebDriverWait(driver, 15);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("green")));
+        
+        WebElement myDynamicElement = (new WebDriverWait(driver, 10))
+              .until(ExpectedConditions.presenceOfElementLocated(By.className("green")));
         assertThat(gpage.getResultsText(), containsString("10 addresses found"));
+        System.out.println(gpage.getResultsText());
     }
 }
