@@ -41,6 +41,6 @@ public class AddressIndexTestTextInputTest extends AddressIndexTestBase {
         
         WebElement myDynamicElement = (new WebDriverWait(driver, 10))
               .until(ExpectedConditions.presenceOfElementLocated(By.className("green")));
-        assertThat(myDynamicElement.getText(), containsString("10 addresses found"));
+        assertThat(myDynamicElement.getText(), containsString("found"));
     }
 }
