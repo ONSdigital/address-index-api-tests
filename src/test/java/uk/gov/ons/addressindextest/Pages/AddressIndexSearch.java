@@ -13,7 +13,7 @@ public class AddressIndexSearch extends PageBase {
     }
     
     public void visitPage() {
-        driver.get("https://addressindex-uicfapps.io/addresses");
+        driver.get("https://addressindex-ui.cfapps.io/addresses");
     }
 
     public String title = "Address index demo - Find an address";
