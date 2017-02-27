@@ -6,9 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class AddressIndexSearch extends PageBase {
+public class AddressIndexClerical extends PageBase {
 
-    public AddressIndexSearch(WebDriver driver) {
+    public AddressIndeClerical(WebDriver driver) {
         this.driver = driver;
     }
     
