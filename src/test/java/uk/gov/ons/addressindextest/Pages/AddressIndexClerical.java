@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AddressIndexClerical extends PageBase {
 
-    public AddressIndeClerical(WebDriver driver) {
+    public AddressIndexClerical(WebDriver driver) {
         this.driver = driver;
     }
     
