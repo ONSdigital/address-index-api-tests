@@ -32,8 +32,8 @@ public class AddressIndexBulk extends PageBase {
     private WebElement resultsSpan;
 
     public void submitBuik() {
-        file.clear();
-        file.sendKeys("addresses.csv");
+        fileButton.clear();
+        fileButton.sendKeys("addresses.csv");
         clickButton(this.uploadButton);
     }
 
