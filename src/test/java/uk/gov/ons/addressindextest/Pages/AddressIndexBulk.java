@@ -31,9 +31,10 @@ public class AddressIndexBulk extends PageBase {
     @FindBy(className = "green")
     private WebElement resultsSpan;
 
-    public void submitSearchText(String text) {
-        setTextAreaInputValue(this.searchTextAreaInput, text);
-        clickButton(this.submitButton);
+    public void submitBuik() {
+        file.clear();
+        file.sendKeys("addresses.csv");
+        clickButton(this.uploadButton);
     }
 
     public String getResultsText() {
