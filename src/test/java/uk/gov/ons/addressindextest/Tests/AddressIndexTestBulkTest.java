@@ -31,7 +31,7 @@ public class AddressIndexTestBulkTest extends AddressIndexTestBase {
 
         this.createDriver(browser, version, os, method.getName());
         WebDriver driver = this.getWebDriver();
-
+        driver.setFileDetector(new LocalFileDetector());
         // initialize page object
         AddressIndexBulk gpage = PageFactory.initElements(driver, AddressIndexBulk.class);
         gpage.visitPage();
