@@ -19,7 +19,7 @@ import java.util.UUID;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.junit.Assert.assertThat;
 
-public class AddressIndexTestTextInputTest extends AddressIndexTestBase {
+public class AddressIndexTestBulkTest extends AddressIndexTestBase {
 
     /**
      * Runs a simple test verifying the search input is functional.
