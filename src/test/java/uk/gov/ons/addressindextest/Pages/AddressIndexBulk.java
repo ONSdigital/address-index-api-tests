@@ -13,7 +13,7 @@ public class AddressIndexBulk extends PageBase {
     }
     
     public void visitPage() {
-        driver.get("http://addressindex-ui.cfapps.io/bulkUpload");
+        driver.get("http://addressindex-ui.cfapps.io/bulkAddresses");
     }
 
     public String title = "Address index demo - Find an address";
