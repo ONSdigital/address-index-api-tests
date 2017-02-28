@@ -26,7 +26,7 @@ public class AddressIndexTestBulkTest extends AddressIndexTestBase {
      * @throws InvalidElementStateException
      */
     @org.testng.annotations.Test(dataProvider = "hardCodedBrowsers")
-    public void verifySearchInputTest(String browser, String version, String os, Method method)
+    public void bulkTest(String browser, String version, String os, Method method)
             throws MalformedURLException, InvalidElementStateException, UnexpectedException {
 
         this.createDriver(browser, version, os, method.getName());
