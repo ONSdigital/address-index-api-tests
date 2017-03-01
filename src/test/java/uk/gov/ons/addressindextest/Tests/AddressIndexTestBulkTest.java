@@ -31,11 +31,11 @@ public class AddressIndexTestBulkTest extends AddressIndexTestBase {
     public void bulkTest(String browser, String version, String os, Method method)
             throws MalformedURLException, InvalidElementStateException, UnexpectedException {
 
-        DesiredCapabilities capabilities = new DesiredCapabilities();
+        DesiredCapabilities capabilities = new DesiredCapabilities.firefox();
         capabilities.setCapability(CapabilityType.BROWSER_NAME, browser);
-        capabilities.setCapability("version", version);
-        //capabilities.setCapability("os", os);
-        RemoteWebDriver driver = new RemoteWebDriver(capabilities);
+        capabilities.setCapability("version", "7");
+        capabillities.setCapability("platform", Platform.XP);
+        RemoteWebDriver driver = new RemoteWebDriver("http://addressindex-ui.cfapps.io/bulkAddresses", capabilities);
         driver.setFileDetector(new LocalFileDetector());
         
         // initialize page object
