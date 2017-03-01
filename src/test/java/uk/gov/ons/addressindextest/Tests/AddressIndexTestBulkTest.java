@@ -14,6 +14,7 @@ import org.openqa.selenium.remote.*;
 
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
+import java.net.URL;
 import java.rmi.UnexpectedException;
 import java.util.concurrent.TimeUnit;
 import java.util.UUID;
