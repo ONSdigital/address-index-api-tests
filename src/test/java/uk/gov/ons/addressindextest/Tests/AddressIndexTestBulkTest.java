@@ -32,7 +32,7 @@ public class AddressIndexTestBulkTest extends AddressIndexTestBase {
             throws MalformedURLException, InvalidElementStateException, UnexpectedException {
 
         this.createDriver(browser, version, os, method.getName());
-        driver.setFileDetector(new LocalFileDetector());
+        //driver.setFileDetector(new LocalFileDetector());
         // initialize page object
         AddressIndexBulk gpage = PageFactory.initElements(driver, AddressIndexBulk.class);
         gpage.visitPage();
