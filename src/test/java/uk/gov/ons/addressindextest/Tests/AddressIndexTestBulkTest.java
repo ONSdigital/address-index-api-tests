@@ -31,8 +31,7 @@ public class AddressIndexTestBulkTest extends AddressIndexTestBase {
     public void bulkTest(String browser, String version, String os, Method method)
             throws MalformedURLException, InvalidElementStateException, UnexpectedException {
 
-        //this.createDriver(browser, version, os, method.getName());
-        RemoteWebDriver driver = new RemoteWebDriver(browser, version, os, method.getName());
+        this.createDriver(browser, version, os, method.getName());
         driver.setFileDetector(new LocalFileDetector());
         // initialize page object
         AddressIndexBulk gpage = PageFactory.initElements(driver, AddressIndexBulk.class);
