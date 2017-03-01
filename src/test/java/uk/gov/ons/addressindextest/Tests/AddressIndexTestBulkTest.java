@@ -36,7 +36,7 @@ public class AddressIndexTestBulkTest extends AddressIndexTestBase {
         //capabilities.setCapability(CapabilityType.BROWSER_NAME, browser);
         capabilities.setCapability("version", "7");
         capabilities.setCapability("platform", Platform.XP);
-        RemoteWebDriver driver = new RemoteWebDriver(new URL("http://http://addressindex-ui.cfapps.io/bulkAddresses:80/"), capabilities);
+        RemoteWebDriver driver = new RemoteWebDriver(new URL("http://addressindex-ui.cfapps.io/bulkAddresses:80/"), capabilities);
         driver.setFileDetector(new LocalFileDetector());
         
         // initialize page object
