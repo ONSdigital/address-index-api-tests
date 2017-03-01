@@ -34,7 +34,7 @@ public class AddressIndexTestBulkTest extends AddressIndexTestBase {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(CapabilityType.BROWSER_NAME, browser);
         capabilities.setCapability("version", version);
-        capabilities.setCapability("os", os);
+        //capabilities.setCapability("os", os);
         RemoteWebDriver driver = new RemoteWebDriver(capabilities);
         driver.setFileDetector(new LocalFileDetector());
         
