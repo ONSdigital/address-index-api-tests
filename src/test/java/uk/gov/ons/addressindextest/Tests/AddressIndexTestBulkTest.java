@@ -36,7 +36,7 @@ public class AddressIndexTestBulkTest extends AddressIndexTestBase {
         capabilities.setCapability("version", version);
         capabilities.setCapability("os", os);
         RemoteWebDriver driver = new RemoteWebDriver(capabilities);
-        driver.setFileDetector(new LocalFileDetector());
+        //driver.setFileDetector(new LocalFileDetector());
         // initialize page object
         AddressIndexBulk gpage = PageFactory.initElements(driver, AddressIndexBulk.class);
         gpage.visitPage();
