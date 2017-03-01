@@ -33,7 +33,7 @@ public class AddressIndexBulk extends PageBase {
 
     public void submitBuik() {
         fileButton.clear();
-        fileButton.sendKeys("addresses.csv");
+        //fileButton.sendKeys("addresses.csv");
         clickButton(this.uploadButton);
     }
 
