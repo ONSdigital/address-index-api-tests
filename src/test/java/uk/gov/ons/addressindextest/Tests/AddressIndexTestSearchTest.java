@@ -131,7 +131,7 @@ public class AddressIndexTestSearchTest extends AddressIndexTestBase {
 
         for (int i =0; i < uprns.length; i++) {
             String uprn = uprns[i][0];
-            String searchInputText = uprns[i][1];
+            String searchInputText = "UPRN: " + uprns[i][1];
 
             this.createDriver(browser, version, os, method.getName());
             WebDriver driver = this.getWebDriver();
