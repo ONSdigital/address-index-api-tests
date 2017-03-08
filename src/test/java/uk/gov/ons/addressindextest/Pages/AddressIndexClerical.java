@@ -13,7 +13,7 @@ public class AddressIndexClerical extends PageBase {
     }
     
     public void visitPage() {
-        driver.get("https://addressindex-ui.cfapps.io/clerical/search");
+        driver.get("https://addressindex-ui.eu-gb.mybluemix.net/clerical/search");
     }
 
     public String title = "Address index demo - Find an address";
