@@ -31,6 +31,10 @@ public class AddressIndexSearch extends PageBase {
     @FindBy(className = "green")
     private WebElement resultsSpan;
 
+    @FindBy(className = "uprn-txt")
+    private WebElement firstUPRN;
+
+    
     public void submitSearchText(String text) {
         setTextAreaInputValue(this.searchTextAreaInput, text);
         clickButton(this.submitButton);
