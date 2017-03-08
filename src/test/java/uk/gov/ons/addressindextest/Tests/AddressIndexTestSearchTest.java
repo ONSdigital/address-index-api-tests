@@ -129,9 +129,9 @@ public class AddressIndexTestSearchTest extends AddressIndexTestBase {
             }
         };
 
-        for (Iterator < string > i = uprns.iterator(); i.hasNext();) {
-            String searchInputText = i.next()[1];
+        for (int i =0; i < uprns.length; i++) {
             String uprn = i[0];
+            String searchInputText = i[1];
 
             this.createDriver(browser, version, os, method.getName());
             WebDriver driver = this.getWebDriver();
