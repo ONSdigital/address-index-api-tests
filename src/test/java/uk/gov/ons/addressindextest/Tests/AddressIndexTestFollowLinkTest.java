@@ -34,7 +34,7 @@ public class AddressIndexTestFollowLinkTest extends AddressIndexTestBase {
         gpage.followLink();
         AddressIndexSearch apage = PageFactory.initElements(driver, AddressIndexSearch.class);
         try {
-            Thread.sleep(1000);                 //1000 milliseconds is one second.
+            Thread.sleep(5000);                 //1000 milliseconds is one second.
             } catch(InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
