@@ -20,14 +20,14 @@ import java.util.UUID;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.junit.Assert.assertThat;
 
-public class AddressIndexTestSearchTestTwo extends AddressIndexTestBase {
+public class AddressIndexTestSearch02Test extends AddressIndexTestBase {
 
     /**
      * Runs a simple test verifying the search input is functional.
      * @throws InvalidElementStateException
      */
     @org.testng.annotations.Test(dataProvider = "hardCodedBrowsers")
-    public void verifySearchTestTwo(String browser, String version, String os, Method method)
+    public void verifySearch02Test(String browser, String version, String os, Method method)
     throws MalformedURLException, InvalidElementStateException, UnexpectedException {
 
         String uprn = "10013046200";
