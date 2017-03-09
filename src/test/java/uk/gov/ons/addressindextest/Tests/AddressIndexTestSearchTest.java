@@ -27,7 +27,7 @@ public class AddressIndexTestSearchTest extends AddressIndexTestBase {
      * @throws InvalidElementStateException
      */
     @org.testng.annotations.Test(dataProvider = "hardCodedBrowsers")
-    public void verifySearchInputTest(String browser, String version, String os, Method method)
+    public void verifySearchTest(String browser, String version, String os, Method method)
     throws MalformedURLException, InvalidElementStateException, UnexpectedException {
 
         String uprn = "100040239491";
