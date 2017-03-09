@@ -20,18 +20,18 @@ import java.util.UUID;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.junit.Assert.assertThat;
 
-public class AddressIndexTestSearchTest extends AddressIndexTestBase {
+public class AddressIndexTestSearchTest20 extends AddressIndexTestBase {
 
     /**
      * Runs a simple test verifying the search input is functional.
      * @throws InvalidElementStateException
      */
     @org.testng.annotations.Test(dataProvider = "hardCodedBrowsers")
-    public void verifySearchTest(String browser, String version, String os, Method method)
+    public void verifySearchTest20(String browser, String version, String os, Method method)
     throws MalformedURLException, InvalidElementStateException, UnexpectedException {
 
-        String uprn = "100040239491";
-        String searchInputText = "Flat F 27 Well Street";
+        String uprn = "100040233649";
+        String searchInputText = "152c sidwell street ex46rt";
 
         this.createDriver(browser, version, os, method.getName());
         WebDriver driver = this.getWebDriver();
