@@ -44,7 +44,7 @@ public class AddressIndexTestBulkTest extends AddressIndexTestBase {
         gpage.visitPage();
         gpage.submitBuik();
         
-        //WebElement myDynamicElement = (new WebDriverWait(driver, 10))
+        //WebElement myDynamicElement = (new WebDriverWait(driver, 1))
           //    .until(ExpectedConditions.presenceOfElementLocated(By.className("green")));
         //assertThat(myDynamicElement.getText(), containsString("found"));
     }
