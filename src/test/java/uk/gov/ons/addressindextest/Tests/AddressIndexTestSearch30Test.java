@@ -31,7 +31,7 @@ public class AddressIndexTestSearch30Test extends AddressIndexTestBase {
     throws MalformedURLException, InvalidElementStateException, UnexpectedException {
 
         String uprn = "10013046133";
-        String searchInputText = "24A EX4 8AW ";
+        String searchInputText = "24A EX4 8AW";
 
         this.createDriver(browser, version, os, method.getName());
         WebDriver driver = this.getWebDriver();
