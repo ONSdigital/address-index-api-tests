@@ -39,7 +39,7 @@ public class AddressIndexTestBlankInputTest extends AddressIndexTestBase {
         gpage.visitPage();
         gpage.submitSearchText(searchInputText);
         
-        WebElement myDynamicElement = (new WebDriverWait(driver, 1))
+        WebElement myDynamicElement = (new WebDriverWait(driver, 3))
               .until(ExpectedConditions.presenceOfElementLocated(By.className("error")));
         assertThat(myDynamicElement.getText(), containsString("Please enter an address"));
     }

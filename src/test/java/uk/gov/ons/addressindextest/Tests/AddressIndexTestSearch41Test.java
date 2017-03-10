@@ -41,7 +41,7 @@ public class AddressIndexTestSearch41Test extends AddressIndexTestBase {
         gpage.visitPage();
         gpage.submitSearchText(searchInputText);
 
-        WebElement myDynamicElement = (new WebDriverWait(driver, 1))
+        WebElement myDynamicElement = (new WebDriverWait(driver, 3))
             .until(ExpectedConditions.presenceOfElementLocated(By.className("uprn-txt")));
         assertThat(myDynamicElement.getText(), containsString(uprn));
     }
