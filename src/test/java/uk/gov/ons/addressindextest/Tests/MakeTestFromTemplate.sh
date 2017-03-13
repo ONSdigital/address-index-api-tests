@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ "$#" -ne 3 ]; then
-    echo "Please pass parameters (3) for test cases number, UPRN and address"
+    echo "Please pass parameters (3) for test case number, UPRN and address"
     exit 1
 fi
 
