@@ -30,8 +30,8 @@ public class AddressIndexTestSearch07Test extends AddressIndexTestBase {
     public void verifySearch07Test(String browser, String version, String os, Method method)
     throws MalformedURLException, InvalidElementStateException, UnexpectedException {
 
-        String uprn = "10023117515";
-        String searchInputText = "Flat 2 Shirehampton House 35 - 37 St Davids Hill  Exeter EX4 4FJ";
+        String uprn = "10013047419";
+        String searchInputText = "FLAT 1 70 VICTORIA STREET EXETER DEVON EX4 6JQ";
 
         this.createDriver(browser, version, os, method.getName());
         WebDriver driver = this.getWebDriver();
