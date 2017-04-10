@@ -16,7 +16,7 @@ public class AddressIndexPage extends PageBase {
     }
 
     public void visitPage() {
-        driver.get("https://addressindex-ui.eu-gb.mybluemix.net/");
+        driver.get("https://addressindex-ui-dev.eu-gb.mybluemix.net/");
     }
 
     public void followLink() {

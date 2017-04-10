@@ -13,7 +13,7 @@ public class AddressIndexBulk extends PageBase {
     }
     
     public void visitPage() {
-        driver.get("https://addressindex-ui.eu-gb.mybluemix.net/bulkAddresses");
+        driver.get("https://addressindex-ui-dev.eu-gb.mybluemix.net/bulkAddresses");
     }
 
     public String title = "Address index demo - Find an address";
